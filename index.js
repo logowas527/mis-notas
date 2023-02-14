@@ -26,6 +26,6 @@ app.get("/", async (req, res) => {
     res.json(rows);
   });
   
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log("Puerto 3000");
   });
